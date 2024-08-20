@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  padding: 5px 20px;
+}
+.movieInfoBox {
+  text-align: start;
+  margin: 0;
+  line-height: 1.4;
+}
+.titleOfMovie {
+  margin: inherit;
+  margin-bottom: 10px;
+}
+.descriptionOfMovie {
+  margin: inherit;
+}
+.subtitleOfMovie {
+  margin: 5px 0;
+}

@@ -1,0 +1,9 @@
+.errorBox {
+    display: flex;
+    justify-content: center;
+}
+.errorText {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}

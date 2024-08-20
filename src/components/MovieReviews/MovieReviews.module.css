@@ -1,0 +1,54 @@
+/* .reviewsBox {}
+.reviewsList {}
+.reviewsListItem {}
+.reviewsTitle {}
+.reviewsDate {}
+.reviewsText {} */
+
+.reviewsBox {
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviewsListItem {
+  border-radius: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 250ms linear;
+}
+.reviewsListItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.reviewsListItem:hover {
+  background-color: #e9ecef;
+}
+
+.reviewsTitle {
+  margin: 0;
+  font-size: 18px;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.reviewsDate {
+  font-size: 12px;
+  color: #afb5bb;
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.reviewsText {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #495057;
+}
