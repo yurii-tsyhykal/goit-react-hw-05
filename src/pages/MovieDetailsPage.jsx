@@ -3,7 +3,6 @@ import GoBackBtn from "../components/GoBackBtn/GoBackBtn";
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
 import { fetchDetailsMovie } from "../services/APIes";
 import MovieDetails from "../components/MovieDetails/MovieDetails";
-import Navigation from "../components/Navigation/Navigation";
 import Loader from "../components/Loader/Loader";
 import Error from "../components/Error/Error";
 
@@ -33,16 +32,13 @@ const MovieDetailsPage = () => {
 
   return (
     <>
-      <Navigation />
-      <main>
-        <GoBackBtn to={goBack.current}>Go Back</GoBackBtn>
-        {isLoading && <Loader />}
-        {error && <Error />}
-        {!error && <MovieDetails {...movie} />}
-        {!error && <NavLink to="cast">Cast</NavLink>}
-        {!error && <NavLink to="reviews">Reviews</NavLink>}
-        <Outlet />
-      </main>
+      <GoBackBtn to={goBack.current}>Go Back</GoBackBtn>
+      {isLoading && <Loader />}
+      {error && <Error />}
+      {!error && <MovieDetails {...movie} />}
+      {!error && <NavLink to="cast">Cast</NavLink>}
+      {!error && <NavLink to="reviews">Reviews</NavLink>}
+      <Outlet />
     </>
   );
 };

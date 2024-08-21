@@ -5,6 +5,7 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/Loader/Loader";
 import MovieCast from "./components/MovieCast/MovieCast";
 import MovieReviews from "./components/MovieReviews/MovieReviews";
+import Navigation from "./components/Navigation/Navigation";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const MoviesPage = lazy(() => import("./pages/MoviesPage"));
@@ -13,6 +14,7 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 function App() {
   return (
     <>
+      <Navigation />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navigation from "../components/Navigation/Navigation";
 import { fetchTrendingMovies } from "../services/APIes";
 import MovieList from "../components/MovieList/MovieList";
 import Loader from "../components/Loader/Loader";
@@ -27,7 +26,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Navigation />
       {isLoading && <Loader />}
       {error && <Error />}
       {listOfTrends.length > 0 && <MovieList MovieList={listOfTrends} />}
